@@ -1,0 +1,31 @@
+@import '../../../css/variables';
+
+.searchbox{
+    padding: 2% 0;
+    text-align: center;
+    input{
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        
+    }
+    button{
+        padding: 11px 20px;
+        margin: 0 1%;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+}
+@include responsive(sm) {
+    .searchbox{
+        input{
+            width: 320px;
+        }
+    }
+}

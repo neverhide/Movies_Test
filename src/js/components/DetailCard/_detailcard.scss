@@ -1,0 +1,33 @@
+@import '../../../css/variables';
+
+.detail_container{
+    display: flex;
+    justify-content: center;
+    .card_detail{
+        margin: 0;
+        padding: 2%;
+        border:solid 1px red;
+        border-radius: 5px;
+        text-align: center;
+        .movie_title{
+            font-size: 2rem;
+        }
+        .details{
+            text-align: left;
+            text-align: justify;
+        }
+        .popularity{
+            color: red;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+@include responsive(sm) {
+    .detail_container{
+        .card_detail{
+            width: 500px;
+        }
+    }
+}   

@@ -1,0 +1,33 @@
+$columns: (
+  columnx1: 100%,
+  columnx2: 50%,
+  columnx3: calc(100% / 3),
+  columnx4: calc(100% / 4)
+);
+
+  //colors
+$colors: (
+    primary: #9ac488,
+    secondary: #81c5e7,
+    ligth: grey
+  );
+
+ // media query
+ 
+$breakpoints: (
+  xs: 300px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1200px
+);
+
+@mixin responsive($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+}

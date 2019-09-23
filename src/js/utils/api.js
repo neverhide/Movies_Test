@@ -1,0 +1,7 @@
+export const apiKey = 'f09d70f5904cba957cfc3afefac48c42'
+export const popular = 'movie/popular'
+export const toprated = 'movie/top_rated'
+export const uncoming = 'movie/upcoming'
+export const base_path_portersm = 'http://image.tmdb.org/t/p/w185'
+export const base_path_posterlg = 'http://image.tmdb.org/t/p/w342'
+export const movie = 'movie'
